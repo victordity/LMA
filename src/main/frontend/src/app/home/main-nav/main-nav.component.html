@@ -1,0 +1,44 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav class="sidenav-content" #sidenav (keydown.escape)="close('escape')" disableClose>
+    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
+
+    <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+      <div class="sidenav-list">
+        <mat-list>
+          <mat-list-item class="sidenav-item">
+            <mat-icon class="sidenav-list-icon">description</mat-icon>
+            Item 1
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item class="sidenav-item">
+            <mat-icon class="sidenav-list-icon">backup</mat-icon>
+            Item 2
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item class="sidenav-item">
+            <mat-icon class="sidenav-list-icon">new_releases</mat-icon>
+            Item 3
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </cdk-virtual-scroll-viewport>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="tollbar">
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button (click)="sidenav.open()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span>Lean Marketing Analytics</span>
+          <span class="example-spacer"></span>
+          <mat-icon class="toolbar-icon">favorite</mat-icon>
+          <mat-icon class="toolbar-icon">delete</mat-icon>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

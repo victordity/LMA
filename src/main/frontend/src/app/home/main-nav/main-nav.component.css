@@ -1,0 +1,62 @@
+
+/* Tollbar Styles 
+  ===================================================== */
+
+.toolbar-icon {
+  padding: 0 14px;
+  margin-right: 10px;
+
+}
+
+.mat-toolbar.mat-primary {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #1D8BF1;
+  box-shadow: 0 6px 10px 0px rgba(0,0,0,0.14), 0 1px 18px 0px rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/* Sidenav Styles 
+  ===================================================== */
+
+.sidenav-content {
+  width: 20%;
+}
+
+.sidenav-list-icon {
+  color: grey;
+  margin-right: 20px;
+  transition: 1s;
+}
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav-list {
+  height: 100%;
+}
+
+.sidenav-item {
+  color: #333333;
+}
+
+mat-list-item:hover{
+  background-color: #D3D3D3;
+}
+
+mat-list-item:hover .sidenav-list-icon{
+  color: black;
+}
+
+.example-viewport {
+  height: 200px;
+  width: 100%;
+}
