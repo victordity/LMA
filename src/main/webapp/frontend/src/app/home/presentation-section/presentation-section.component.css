@@ -1,0 +1,8 @@
+.presentation-module {
+    position: relative;
+    height: 700px;
+    width: auto;
+    background: url('./images/presentation-image.jpg') center 30% no-repeat;
+    background-color: #f3f3f3;
+    background-size: cover;
+}

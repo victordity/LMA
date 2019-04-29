@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AlertModule } from 'ngx-bootstrap';
@@ -17,12 +18,14 @@ import { MatToolbarModule, MatListModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { MainNavComponent } from './home/main-nav/main-nav.component';
 import { PresentationSectionComponent } from './home/presentation-section/presentation-section.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     PresentationSectionComponent,
+    ProductsComponent,
   ],
   imports: [
     AlertModule.forRoot(),
@@ -41,6 +44,7 @@ import { PresentationSectionComponent } from './home/presentation-section/presen
     MatDividerModule,
     MatCardModule,
     ScrollDispatchModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

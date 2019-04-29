@@ -1,7 +1,23 @@
 .presentation-module {
+    position: relative;
     height: 700px;
-    background-color: blueviolet;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: auto;
+    background: url('./images/background-presentation.jpg') center 30% no-repeat;
+    background-color: #f3f3f3;
+    background-size: cover;
+}
+
+.slogan-text {
+    font-size: 60px;
+    color: #f3f3f3;
+/*     color: #fffbcb */;
+    padding-top: 160px;
+    line-height: 1;
+    font-weight: 500;
+
+}
+
+.init-button {
+    margin-top: 600px;
+    background-color: #FFFBCB;
 }
